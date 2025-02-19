@@ -1,0 +1,65 @@
+🔒 Task 4: Generating Security Events on the Kali VM
+To confirm that the Elastic Agent is functioning correctly and forwarding logs to your Elastic SIEM, we’ll generate some security-related events using Nmap.
+
+Nmap (Network Mapper) is a powerful open-source tool for network exploration and security auditing. It can:
+
+Scan hosts for open ports
+Identify services running on target systems
+Detect operating systems and network vulnerabilities
+
+🛠 1. Install Nmap (if not using Kali Linux)
+If you’re not using Kali Linux (where Nmap is preinstalled), install it by running:
+
+sudo apt update
+sudo apt-get install nmap
+
+🌐 2. Identify Your Kali VM’s IP Address
+To scan your Kali VM or host machine, you’ll need the correct IP address. Run:
+
+ip a
+Look for an entry like inet 192.168.x.x under the correct network interface (e.g., eth0, wlan0).
+
+🔍 3. Run Basic Nmap Scan
+Run a basic scan on your Kali VM’s IP address:
+
+sudo nmap
+Replace with your actual IP address.
+
+💡 Example:
+
+sudo nmap 192.168.1.10
+
+🌟 4. Run Additional Nmap Scans for More Events
+Generate more security events by running different types of scans:
+
+TCP SYN Scan (Stealth Scan):
+
+sudo nmap -sS
+(Common for identifying open ports stealthily.)
+
+TCP Connect Scan:
+
+sudo nmap -sT
+(Used when SYN scan is not available.)
+
+Full Port Scan:
+
+sudo nmap -p-
+(Scans all 65,535 ports.)
+
+Service Version Detection:
+
+sudo nmap -sV
+(Identifies services and versions running on open ports.)
+
+OS Detection and Traceroute:
+
+sudo nmap -A
+(Performs OS detection, version detection, script scanning, and traceroute.)
+
+Verify Security Events in Elastic SIEM
+Head back to your Elastic SIEM dashboard.
+Go to Kibana → SIEM → Detections and check for logs related to Nmap scans, such as:
+Open port detections
+Suspicious network scanning activity
+Service enumeration events
