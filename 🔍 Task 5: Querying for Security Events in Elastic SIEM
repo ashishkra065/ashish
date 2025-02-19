@@ -1,0 +1,45 @@
+🔍 Task 5: Querying for Security Events in Elastic SIEM
+With data from the Kali VM successfully forwarded to Elastic SIEM, we can now query and analyze these logs to detect security events.
+
+🚀 Step-by-Step Guide
+
+1️⃣ Access Logs in Elastic SIEM
+In your Elastic Deployment, click the menu icon (☰) in the top-left corner.
+Under “Observability”, click on the “Logs” tab to view logs collected from the Kali VM.
+2️⃣ Filter Logs with Search Queries
+Use the search bar to filter logs based on specific security events. For example:
+
+🔍 To find Nmap scan-related events:
+
+event.action: "nmap_scan"
+
+🔐 To find logs involving sudo commands:
+
+process.args: "sudo"
+
+3️⃣ Execute the Search
+
+Click on the “Search” button to run the query.
+⏳ Note: It might take a few minutes for events to populate, so try refreshing if logs don’t appear immediately.
+4️⃣ Analyze and Investigate Events
+
+The filtered results will be displayed in a table below.
+Click on the three dots (⋮) next to each event to view detailed information, including:
+Event timestamps
+Host details
+Process arguments
+User activity
+
+💡 Bonus: Generate More Security Events
+To deepen your understanding, try creating additional security scenarios:
+
+🔑 Authentication Failures:
+Attempt SSH logins with incorrect passwords:
+ssh username@host-ip
+🔒 Brute-force Attempts:
+
+Repeated incorrect password entries to simulate brute-force attacks.
+📈 Key Insights from Querying Logs
+Understand how Elastic SIEM detects network scans and suspicious user activities.
+Learn how log patterns indicate potential threats.
+Practice real-world security investigation techniques using Kibana’s querying tools.
