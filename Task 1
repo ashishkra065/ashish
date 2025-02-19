@@ -1,0 +1,30 @@
+Task 1: Set Up an Elastic Account
+To run the SIEM on Elastic Cloud, you'll first need to create a free Elastic Cloud instance. Follow these steps:
+
+🚀 Step-by-Step Guide
+Create an Elastic Cloud Account
+
+Go to Elastic Cloud Registration.
+Sign up for a free trial account by providing the required details.
+Access the Elastic Cloud Console
+
+After registration, log in to your account at Elastic Cloud Console.
+Start Your Free Trial
+
+On the dashboard, click “Start your free trial” to activate Elastic Cloud services.
+Create a Deployment
+
+Click the “Create Deployment” button.
+For the deployment type, select “Elasticsearch” (this will include Kibana by default).
+Configure Deployment Settings
+
+Choose a region closest to your location for optimal performance.
+Select a deployment size based on your project needs (the default size works for most use cases).
+Deploy Elasticsearch & Kibana
+
+Click “Create Deployment” to start the provisioning process.
+Wait for the deployment to complete—this may take a few minutes.
+Access Your Deployment
+
+Once the deployment is ready, click “Continue” to proceed.
+Make sure to note down your Elastic credentials and Cloud ID for future configurations.
