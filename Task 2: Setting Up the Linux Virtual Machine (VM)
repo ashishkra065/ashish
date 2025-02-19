@@ -1,0 +1,26 @@
+Task 2: Setting Up the Linux Virtual Machine (VM)
+In this step, we’ll set up a Kali Linux VM using Oracle VirtualBox. However, you can use any Linux distribution and virtualization software you prefer.
+
+🚀 Step-by-Step Guide
+
+Download Kali Linux VM
+Head to the official Kali Linux website: Get Kali Linux.
+Download the Kali Linux VirtualBox Image (if using VirtualBox) or the VMware Image (if using VMware).
+💡 Tip: Choose the image that matches your virtualization software for a smoother setup process.
+
+Set Up the Virtual Machine
+Oracle VirtualBox (Recommended) or VMware can be used.
+In VirtualBox:
+Open VirtualBox and click on File → Import Appliance.
+Select the Kali Linux .ova file you downloaded.
+Click Next, review the settings, and click Import.
+
+Start and Install Kali Linux
+Once imported, select the Kali VM and click Start.
+Follow the on-screen prompts to complete the Kali Linux installation.
+
+Log In to Kali Linux
+After installation, log in using the default credentials:
+Username: kali
+Password: kali
+🔒 Important: For security purposes, consider changing the default password after logging in:
