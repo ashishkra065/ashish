@@ -1,0 +1,41 @@
+📊 Task 6: Create a Dashboard to Visualize Security Events
+Elastic SIEM allows you to create custom dashboards to visualize logs, track patterns, and detect anomalies. In this task, we will create a simple dashboard that shows the count of security events over time.
+
+🚀 Step-by-Step Guide
+1️⃣ Access the Dashboard Section
+Go to the Elastic web portal: Elastic Cloud
+Click on the menu icon (☰) at the top-left.
+Under the “Analytics” section, select “Dashboards”.
+
+2️⃣ Create a New Dashboard
+Click on the “Create dashboard” button (top-right corner).
+Provide a meaningful name for your dashboard, e.g., SIEM Security Events Dashboard.
+
+3️⃣ Add Visualizations
+Click the “Create Visualization” button to add a new chart.
+
+4️⃣ Choose a Visualization Type
+Select either:
+📈 Line Chart (for continuous trends over time)
+📊 Area Chart (for cumulative visualizations)
+
+5️⃣ Configure the Visualization
+In the “Metrics” section:
+For the Vertical Axis (Y-Axis), select:
+
+Aggregation: Count
+For the Horizontal Axis (X-Axis), select:
+
+Aggregation: Date Histogram
+Field: @timestamp
+Interval: Auto
+
+6️⃣ Finalize and Save
+Once the chart is configured, click “Save and return” to add it to the dashboard.
+Click “Save” on the dashboard page to store your work.
+You can add more visualizations later, such as:
+📌 Top Nmap Events by Host
+🔒 Authentication Failure Trends
+🌐 Geo-location of Network Events
+🎯 Outcome
+✅ A fully functional dashboard that visualizes security event trends over time, helping you identify suspicious patterns and analyze system behavior.
