@@ -1,0 +1,43 @@
+Task 3: Setting Up the Elastic Agent to Collect Logs
+In Elastic SIEM, an Elastic Agent is used to collect and forward security-related events from your Kali Linux VM to your Elastic SIEM instance. This allows for centralized analysis and real-time monitoring.
+
+🚀 Step-by-Step Guide
+🔐 1. Access Elastic SIEM Instance
+Log in to your Elastic Cloud instance.
+In the Kibana dashboard, click the main menu (☰) on the top-left corner.
+Scroll down and select “Integrations.”
+🔍 2. Search and Install Elastic Defend
+In the Integrations page, use the search bar to search for:
+
+Elastic Defend
+Click on Elastic Defend to open its integration page.
+Click “Install Elastic Defend” and follow the on-screen installation instructions.
+
+💻 3. Copy the Installation Command
+On the installation page:
+Select "Linux" as the operating system.
+Copy the provided command to your clipboard (this command installs the Elastic Agent and links it to your deployment).
+
+🖥️ 4. Install the Elastic Agent on Kali VM
+Open the terminal in Kali Linux.
+Paste and run the copied command:
+
+Example (Replace with actual command from Elastic SIEM)
+sudo ./elastic-agent install --url=https://your-deployment-url --enrollment-token=your-token
+The installation process might take a few minutes.
+🎯 5. Verify the Agent Installation
+Once you see the message:
+
+Elastic Agent has been successfully installed.
+The agent will automatically start collecting and forwarding logs.
+
+Verify the agent's status by running:
+
+sudo systemctl status elastic-agent.service
+The output should indicate that the service is active (running).
+
+🌐 6. Troubleshooting Installation Issues
+If you encounter errors, ensure your Kali VM is connected to the internet:
+
+ping -c 4 google.com
+If there’s no internet connection, check your VirtualBox network settings (set to NAT or Bridged Adapter) and try again.
